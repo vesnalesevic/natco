@@ -162,6 +162,11 @@ nav a .btn {
     opacity: 1;
 }
 
+#fullpage section {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
 /* ************* NAVBAR ********************* */
 
 nav {
@@ -241,6 +246,7 @@ div#fp-nav a span {
     background: linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('/nacto-images/natco-home-hero.png');
     height: 100vh;
     background-size: cover;
+    background-position-x: center;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -260,6 +266,7 @@ div#fp-nav a span {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-fine_food.png');
     height: 100vh;
     background-size: cover;
+    background-position-x: center;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -269,6 +276,7 @@ div#fp-nav a span {
     background: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-one_on_one.png');
     height: 100vh;
     background-size: cover;
+    background-position-x: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -278,6 +286,7 @@ div#fp-nav a span {
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-innovating.png');
     height: 100vh;
     background-size: cover;
+    background-position-x: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -287,6 +296,7 @@ div#fp-nav a span {
     background: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-tour_edited.jpg');
     height: 100vh;
     background-size: cover;
+    background-position-x: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -296,6 +306,7 @@ div#fp-nav a span {
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/Video.png');
     height: 100vh;
     background-size: cover;
+    background-position-x: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -544,6 +555,11 @@ textarea {
     }
 
     /* *********** NAVBAR *********** */
+
+    .logo {
+        width: 120px;
+        height: 48px;
+    }
 
     nav button {
         display: inline-block;
