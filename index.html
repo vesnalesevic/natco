@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATCO</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- GOOGLE FONTS (KANIT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap"
+        rel="stylesheet">
+
+    <!--FullPage Js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"
+        integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css"
+        integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A=="
+        crossorigin="anonymous" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js"></script>
+    <!--End FullPage Js-->
+
+    <!-- RECAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <link rel="stylesheet" href="/style.css" type="text/css">
+
+</head>
+
+
+<nav id="menu">
+    <div class="container-fluid nav_container">
+        <a href="index.html">
+            <img src="/nacto-images/Natco-Logo-White.svg">
+        </a>
+        <ul class="nav_menu nav-closed">
+            <li><a href="index.html" class="active_nav-item">HOME</a></li>
+            <li><a href="#section-believe">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">TOURS</a></li>
+            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">PORTAL LOGIN</a></li>
+            <li><a href="#"><button class="btn">CONTACT</button></a></li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg">
+            <span><i class="uil uil-bars" style="font-size: 30px; text-align: right;"></i></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-body" style="padding: 0px; margin: 0px;">
+                <div class="d-flex" style="margin-top: 0px;">
+                    <button type="button" class="btn-close ms-auto" style="margin-right:0px; margin-top:15px;"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="nav_menu-canvas">
+                    <li><a href="index.html"><strong>HOME</strong></a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">TOURS</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">PORTAL LOGIN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+    <div id="fullpage">
+        <div class="slide">
+            <section class="vertical-scrolling intro">
+                <div class="d-flex container-fluid column justify-content-center"
+                    style="margin-left:auto; margin-right: auto;">
+                    <div>
+                        <h1>A Food Service Legacy Since 1925</h1>
+                        <h4>WE SUPPLY TOP-QUALITY PRODUCTS IN LOUISIANA AND BEYOND</h4>
+                        <a href="#"><button class="btn">EXPLORE OUR SERVICES</button></a>
+                    </div>
+                    <a href="#secondPage"><img class="arrow-down" src="/nacto-images/angle-down.svg" alt=""></a>
+                </div>
+            </section>
+            <section class="vertical-scrolling support">
+                <div class="d-flex container-fluid column">
+                    <div class="d-flex container-fluid row" style="margin-left:auto; margin-right: auto;">
+                        <div class="left-side">
+                        </div>
+                        <div class="right-side">
+                            <h1>We Support Fine Food</h1>
+                            <div class="horizontal-line"></div>
+                            <p>Louisiana is famous for its food, but you can’t have great food without great
+                                ingredients.
+                                When
+                                Natco was founded, we built our reputation as butchers who delivered the best possible
+                                products
+                                to the restaurants and businesses that would establish the legendary culinary traditions
+                                of
+                                New
+                                Orleans. Now, as a modern company that handles every aspect of food service, we keep
+                                this
+                                tradition alive by developing custom products for our customers, helping them refine
+                                their
+                                menus, and much more.</p>
+                            <a href="#"><button class="btn">NATCO FOR RESTAURANTS</button></a>
+                        </div>
+                    </div>
+                    <a href="#thirdPage"><img class="arrow-down" src="/nacto-images/angle-down.svg" alt=""></a>
+                </div>
+            </section>
+            <section id="section-believe" class="vertical-scrolling believe">
+                <div class="d-flex container-fluid row" style="margin-left:auto; margin-right: auto;">
+                    <div class="left-side">
+                        <h1>We Believe in 1-on-1</h1>
+                        <div class="horizontal-line"></div>
+                        <p>Globalized supply chains and massive distribution networks make it hard to find real partners
+                            who
+                            care about your restaurant or business. We still believe that the best way to serve our
+                            customers is to provide personalized service, and that’s why we use site visits and offer
+                            product samples to get a true understanding of your needs and vision. Then, we share our
+                            insights from almost 100 years of culinary experience in order to help you succeed.</p>
+                        <a href="index.html"><button class="btn">SCHEDULE A PERSONAL TOUR</button></a>
+                    </div>
+                    <div class="right-side">
+                    </div>
+                </div>
+                <a href="#fourthPage"><img class="arrow-down" src="/nacto-images/angle-down.svg" alt=""></a>
+            </section>
+            <section class="vertical-scrolling innovation">
+                <div class="d-flex container-fluid row" style="margin-left:auto; margin-right: auto;">
+                    <div class="left-side">
+                    </div>
+                    <div class="right-side">
+                        <h1>We are always Innovating</h1>
+                        <div class="horizontal-line"></div>
+                        <p>We have been able to provide the best possible service to our customers because we
+                            continuously
+                            invest in our technology, techniques, and systems. Our 90,000 square foot facility is home
+                            to
+                            bleeding-edge technology that allows our experts to produce perfect, personalized cuts while
+                            moving the volume that Louisiana’s incredible culinary scene demands.</p>
+                        <a href="index.html"><button class="btn">OUR FACILITY</button></a>
+                    </div>
+                </div>
+                <a href="#fifthPage"><img class="arrow-down" src="/nacto-images/angle-down.svg" alt=""></a>
+            </section>
+            <section class="vertical-scrolling tour">
+                <div class="d-flex container-fluid row" style="margin-left:auto; margin-right: auto;">
+                    <div class="left-side">
+                        <h1>Interested in a tour?</h1>
+                        <div class="horizontal-line"></div>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                            duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                            dolor
+                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna</p>
+                        <a href="index.html"><button class="btn">OUR FACILITY</button></a>
+                    </div>
+                    <div class="right-side">
+                    </div>
+                </div>
+                <a href="#sixthPage"><img class="arrow-down" src="/nacto-images/angle-down.svg" alt=""></a>
+            </section>
+            <section class="vertical-scrolling chief">
+                <div class="d-flex container-fluid row" style="margin-left:auto; margin-right: auto;">
+                    <div class="left-side">
+                    </div>
+                    <div class="right-side">
+                        <h2 class="text-center"><span>"</span>&nbsp;Natco’s
+                            culinary expertise and commitment to top-quality
+                            products are the secret weapons behind my restaurant’s success&nbsp;<span>"</span></h2>
+                        <h2 class="text-center"><span>—</span>&nbsp;Emerill Lagasse</h2>
+                    </div>
+                </div>
+                <a href="#footer"><img class="arrow-down" src="/nacto-images/angle-down.svg" alt=""></a>
+            </section>
+
+            <!-- *************** FOOTER *********** -->
+            <section class="vertical-scrolling fp-scrollable fp-auto-height">
+                <div class="footer">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3991516.5397888054!2d-93.54075128088793!3d28.75366075239806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620d67f9bcd5d99%3A0xd77aeb9c931d3c0!2s321%20W%2010th%20St%2C%20Reserve%2C%20LA%2070084%2C%20USA!5e0!3m2!1sen!2srs!4v1655455029817!5m2!1sen!2srs"
+                        width="100%" height="420px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="d-flex footer-contact-form" style="justify-content:center;">
+                        <div class="d-flex container-fluid form" style="justify-content:center;">
+                            <div class="form-left" style="width: fit-content;">
+                                <img style="display:block;" src="/nacto-images/Natco-Logo-White.svg" alt="">
+                                <div style="margin-top: 20px;">
+                                    <img src="/nacto-images/f_1_.svg" alt="">
+                                    <img style="margin-left: 15px;" src="/nacto-images/Component 18.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="contact-form text-center">
+                                <h3>Contact Us</h3>
+                                <div>
+                                    <input type="text" name="Your Name" placeholder="Name*" required>
+                                    <input type="email" name="Email Address" placeholder="Email*" required>
+                                    <textarea name="Message" rows="10" placeholder="Message*" required></textarea>
+                                    <div class="d-flex captcha justify-content-around">
+                                        <div class="g-recaptcha"
+                                            data-sitekey="6LeBRIUgAAAAAKKRFv3Dj2MRAqaiGN1W4yWXVX6Q"></div>
+                                        <button type="submit" class="btn">SEND MESSAGE</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-right d-flex" style="flex-direction: column;">
+                                <div class="d-flex" style="flex-direction: row;">
+                                    <div>
+                                        <img style="margin-right:20px;" src="/nacto-images/map-marker-alt.svg" alt="">
+                                    </div>
+                                    <div class="p1">
+                                        Natco Food Service
+                                        <br>
+                                        321 West 10th Street Reserve,
+                                        <br>
+                                        LA 70084
+                                        <br>
+                                        USA
+                                    </div>
+                                </div>
+
+                                <div class="d-flex" style="flex-direction: row;">
+                                    <div>
+                                        <img style="margin-right:20px;" src="/nacto-images/phone-alt.svg" alt="">
+                                    </div>
+                                    <div class="p1">
+                                        Phone: (985) 479-4200
+                                        <br>
+                                        Fax: (985) 479-4200
+                                    </div>
+                                </div>
+
+                                <div class="d-flex" style="flex-direction: row;">
+                                    <div>
+                                        <img style="margin-right:20px;" src="/nacto-images/envelope.svg" alt="">
+                                    </div>
+                                    <div class="p1">
+                                        info@natcofs.com
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex form-right-2 justify-content-between" style="display: inline;">
+                                <div>
+                                    <img style="display:block;" src="/nacto-images/Natco-Logo-White - small.svg" alt="">
+                                </div>
+
+                                <div style="margin-top: auto; margin-bottom:auto;">
+                                    <img src="/nacto-images/f_1_.svg" alt="">
+                                    <img style="margin-left: 15px;" src="/nacto-images/Component 18.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex container-fluid footer-menu">
+                            <div class="d-flex">
+                                <p style="height:fit-content; margin-top: auto; margin-bottom: auto;">© 2021 Natco Food
+                                    Service. All Rights
+                                    Reserved.</p>
+                            </div>
+                            <ul class="d-flex footer-nav" style="display: row; margin-top: auto; margin-bottom: auto;">
+                                <li><a href="index.html" class="active_nav-item">HOME</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">SERVICES</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+            </section>
+            <!-- *************** END OF FOOTER *********** -->
+        </div>
+    </div>
+    <script>
+        new fullpage("#fullpage", {
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'footer'],
+            sectionSelector: '.vertical-scrolling',
+            menu: '#menu',
+            navigation: true,
+            parallax: true,
+            scrollOverflow: true,
+        });
+
+    </script>
+</body>
+
+<script src="./js/bootstrap.min.js"></script>
+<script src="/js-singularity/main.js"></script>
+
+</html>
