@@ -49,7 +49,7 @@ body {
     scroll-behavior: smooth;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    background: var(--color-white);
+    background: var(--color-black);
 }
 
 .container-fluid {
@@ -90,6 +90,13 @@ h4 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
+    color: var(--color-white);
+}
+
+h5 {
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 600;
     color: var(--color-white);
 }
 
@@ -136,9 +143,14 @@ nav a .btn {
     color: var(--color-white);
 }
 
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    margin: 11px;
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    margin: 0px 10px 10px 0px;
+    margin: 11px 0px 11px 0px;
     height: 15px;
     width: 15px;
     background-color: var(--color-white);
@@ -147,7 +159,7 @@ nav a .btn {
 
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span {
-    margin: 0px 0px 0px 0px;
+    margin: 11px 0px 11px 0px;
     height: 15px;
     width: 15px;
 }
@@ -156,7 +168,7 @@ nav a .btn {
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
-    margin: 0px 0px 0px 0px;
+    margin: 11px 0px 11px 0px;
     height: 15px;
     width: 15px;
     opacity: 1;
@@ -172,7 +184,7 @@ nav a .btn {
 nav {
     background: transparent;
     width: 100vw;
-    height: 106px;
+    height: 89px;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -181,7 +193,7 @@ nav {
 }
 
 nav ul {
-    height: 106px;
+    height: 89px;
 }
 
 .nav_container {
@@ -225,34 +237,42 @@ div#fp-nav a span {
     height: 15px;
 }
 
+.offcanvas {
+    width: 0px;
+}
+
+.active_nav-item {
+    font-weight: 700;
+}
+
 /* ************* HOME PAGE ********** */
 .arrow-down {
     bottom: 40px;
     display: block;
     left: 50%;
-    margin-left: -25px;
+    margin-left: -16px;
     position: absolute;
 }
 
 .left-side {
-    width: 50%;
+    max-width: 50%;
 }
 
 .right-side {
-    width: 50%;
+    max-width: 50%;
 }
 
 .intro {
-    background: linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('/nacto-images/natco-home-hero.png');
+    background: linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('/nacto-images/natco-home-scaled');
     height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position-x: center;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
 }
-
 
 .intro .btn {
     margin-top: 30px;
@@ -263,54 +283,63 @@ div#fp-nav a span {
 }
 
 .support {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-fine_food.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-fine_food.jpg');
     height: 100vh;
     background-size: cover;
-    background-position-x: center;
+    background-position: center center;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 }
 
 .believe {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-one_on_one.png');
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-one_on_one-scaled.jpg');
     height: 100vh;
     background-size: cover;
-    background-position-x: center;
-    align-items: center;
+    background-position: center center;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .innovation {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-innovating.png');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/innovating-scaled.jpg');
     height: 100vh;
     background-size: cover;
-    background-position-x: center;
-    align-items: center;
+    background-position: center center;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .tour {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-tour_edited.jpg');
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/tour-scaled.jpg');
     height: 100vh;
     background-size: cover;
-    background-position-x: center;
-    align-items: center;
+    background-position: center center;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .chief {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/Video.png');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/chief-scaled.jpg');
     height: 100vh;
     background-size: cover;
-    background-position-x: center;
-    align-items: center;
+    background-position: center center;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
+
+.support p,
+.believe p,
+.innovation p,
+.tour p,
+.chief p {
+    max-width: 636.6px;
+}
+
 
 h2 span {
     color: var(--color-red);
@@ -378,7 +407,7 @@ h2 span {
 
 .contact-form {
     margin-top: -160px;
-    z-index: 100;
+    z-index: 0;
     background-color: var(--color-white);
     width: 590px;
     height: 498px;
@@ -411,7 +440,6 @@ h2 span {
 input,
 textarea {
     width: 100%;
-
     padding-top: 10px;
     font-size: 16px;
     line-height: 16px;
@@ -525,8 +553,6 @@ textarea {
     .captcha button {
         margin-top: 10px;
     }
-
-
 }
 
 @media screen and (max-width:991px) {
@@ -557,8 +583,8 @@ textarea {
     /* *********** NAVBAR *********** */
 
     .logo {
-        width: 120px;
-        height: 48px;
+        width: auto;
+        height: 35px;
     }
 
     nav button {
@@ -635,48 +661,81 @@ textarea {
 
     .nav_menu-canvas li a:hover {
         background: var(--color-bg2);
-        color: var(--color-white);
+        color: var(--color-dark-red);
     }
 
     /* HOME PAGE */
 
+    #fp-nav ul li a span,
+    .fp-slidesNav ul li a span {
+        height: 10px;
+        width: 10px;
+    }
+
+    #fp-nav ul li:hover a span,
+    .fp-slidesNav ul li:hover a span {
+        height: 10px;
+        width: 10px;
+    }
+
+    #fp-nav ul li a.active span,
+    .fp-slidesNav ul li a.active span,
+    #fp-nav ul li:hover a.active span,
+    .fp-slidesNav ul li:hover a.active span {
+        height: 10px;
+        width: 10px;
+    }
+
+    .arrow-down {
+        bottom: 30px;
+        width: 30px;
+        height: 17.45px;
+    }
+
     .support .right-side {
         position: absolute;
         margin-left: -30px;
-        vertical-align: text-bottom;
+        vertical-align: bottom;
+        max-height: 100vh;
         bottom: 100px;
+        max-width: 85%;
         width: var(--container-width-xs);
     }
 
     .believe .left-side {
         position: absolute;
         margin-left: -30px;
-        vertical-align: text-bottom;
+        vertical-align: bottom;
+        max-height: 100vh;
         bottom: 100px;
+        max-width: 85%;
         width: var(--container-width-xs);
     }
 
     .innovation .right-side {
         position: absolute;
         margin-left: -30px;
-        vertical-align: text-bottom;
+        vertical-align: bottom;
         bottom: 100px;
+        max-width: 85%;
         width: var(--container-width-xs);
     }
 
     .tour .left-side {
         position: absolute;
         margin-left: -30px;
-        vertical-align: text-bottom;
+        vertical-align: bottom;
         bottom: 100px;
+        max-width: 85%;
         width: var(--container-width-xs);
     }
 
     .chief .right-side {
         position: absolute;
         margin-left: -30px;
-        vertical-align: text-bottom;
+        vertical-align: bottom;
         bottom: 100px;
+        max-width: 85%;
         width: var(--container-width-xs);
     }
 
@@ -692,22 +751,10 @@ textarea {
         margin-right: auto;
     }
 
-    .support .left-side {
-        width: 0%;
-    }
-
-    .believe .right-side {
-        width: 0%;
-    }
-
-    .innovation .left-side {
-        width: 0%;
-    }
-
-    .tour .right-side {
-        width: 0%;
-    }
-
+    .support .left-side,
+    .believe .right-side,
+    .innovation .left-side,
+    .tour .right-side,
     .chief .left-side {
         width: 0%;
     }
@@ -735,6 +782,10 @@ textarea {
         padding-right: 25px;
         width: 82%;
         visibility: visible;
+    }
+
+    .footer-contact-form {
+        margin-top: -7px;
     }
 
     .contact-form {
@@ -810,23 +861,16 @@ textarea {
         font-size: 17px;
     }
 
-    .support .right-side {
-        width: var(--container-width-xxs);
+    h5 {
+        font-size: 42px;
     }
 
-    .believe .left-side {
-        width: var(--container-width-xxs);
-    }
-
-    .innovation .right-side {
-        width: var(--container-width-xxs);
-    }
-
-    .tour .left-side {
-        width: var(--container-width-xxs);
-    }
-
+    .support .right-side,
+    .believe .left-side,
+    .innovation .right-side,
+    .tour .left-side,
     .chief .right-side {
+        max-width: 85%;
         width: var(--container-width-xxs);
     }
 }
@@ -854,35 +898,24 @@ textarea {
         font-size: 14px;
     }
 
+    h5 {
+        font-size: 30px;
+    }
+
     /* ***** HOME PAGE ***** */
-    .support .right-side {
-        max-width: 85%;
-        margin-left: -15px;
-        margin-right: 15px;
-    }
-
-    .believe .left-side {
-        max-width: 85%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .innovation .right-side {
-        max-width: 85%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .tour .left-side {
-        max-width: 85%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
+    .believe .left-side,
+    .innovation .right-side,
+    .tour .left-side,
     .chief .right-side {
         max-width: 85%;
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .support .right-side {
+        max-width: 85%;
+        margin-left: -15px;
+        margin-right: 15px;
     }
 
     .intro h1 {
@@ -892,6 +925,430 @@ textarea {
     .intro h4 {
         max-width: 250px;
     }
+}
+
+@media (max-height: 500px) {
+
+    .support .right-side,
+    .believe .left-side,
+    .innovation .right-side,
+    .tour .left-side,
+    .chief .right-side {
+        top: 90px;
+    }
+}
+
+@media (max-height: 610px) {
+    @media (max-width: 380px) {
+
+        .support .right-side,
+        .believe .left-side,
+        .innovation .right-side,
+        .tour .left-side,
+        .chief .right-side {
+            top: 90px;
+        }
+    }
+}
+
+@media (min-height: 610px) {
+    @media (max-width: 330px) {
+
+        .support .right-side,
+        .believe .left-side,
+        .innovation .right-side,
+        .tour .left-side,
+        .chief .right-side {
+            top: 90px;
+        }
+    }
+}
+
+@media (max-height: 610px) and (min-height:500px) {
+    @media (min-width: 380px) and (max-width:460px) {
+
+        .support .right-side,
+        .believe .left-side,
+        .innovation .right-side,
+        .tour .left-side,
+        .chief .right-side {
+            top: 90px;
+        }
+    }
+}
 
 
+/* ********** PAGE ABOUT US *********** */
+
+.nav_about {
+    background: var(--color-black);
+    opacity: 0.6;
+    height: 100px;
+}
+
+.nav_about .offcanvas {
+    opacity: 1 !important;
+}
+
+.about-us {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/nacto-images/about-us-scaled.jpg');
+    width: 100vw;
+    height: 597px;
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ************ OUR STORY ********* */
+
+.our_story {
+    position: relative;
+    min-height: 1000px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+}
+
+.our_story-cover .cover-1 {
+    left: 0;
+    right: auto;
+}
+
+.our_story-cover .cover-2 {
+    left: auto;
+    right: 0;
+}
+
+.cover-1 {
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/nacto-images/about-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    height: 641px;
+    width: 47.5%;
+}
+
+.cover-2 {
+    z-index: -1;
+    background: url('/nacto-images/about-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 280px;
+    bottom: 0px;
+    height: 641px;
+    width: 47.5%;
+}
+
+.our_story>.container-fluid {
+    height: 641px;
+    position: relative;
+    z-index: 100;
+}
+
+.our_story p,
+.our_facility p {
+    margin-bottom: 0px;
+}
+
+@media (min-width:991px) {
+
+    .our_story p,
+    .our_facility p {
+        line-height: 22px;
+    }
+}
+
+
+.story-text {
+    max-width: 524px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* *********** OUR FACILITY ************ */
+.our_facility {
+    position: relative;
+    min-height: 751px;
+}
+
+.our_facility-cover .facility_cover {
+    left: 0;
+    right: auto;
+}
+
+.facility_cover {
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.75) 100%, rgba(0, 0, 0, 0.75) 100%), url('/nacto-images/stock-photo-meat-industry-meats-hanging-in-the-cold-store-1285101004_edited.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 751px;
+    width: 65%;
+}
+
+.our_facility>.container-fluid {
+    gap: 70px;
+    display: flex;
+    flex-direction: row;
+    height: 751px;
+    position: relative;
+}
+
+.facility-left {
+    width: 47.5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.facility-left img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+}
+
+.facility-right {
+    display: flex;
+    width: 47.5%;
+}
+
+.our_facility-text {
+    height: fit-content;
+    max-width: 524px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* *********** OUR TEAM ********** */
+
+@media (max-width:1399px) {
+    .about-us {
+        height: 520px;
+    }
+
+    /* ************ OUR STORY ********* */
+    .cover-1 {
+        height: 520px;
+    }
+
+    .cover-2 {
+        height: 520px;
+    }
+
+    .our_story>.container-fluid {
+        height: 520px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .story-text {
+        max-width: 450px;
+    }
+
+    /* ************ OUR STORY ********* */
+    .facility_cover {
+        top: 0px;
+        height: 651px;
+    }
+
+    .our_facility>.container-fluid {
+        height: 651px;
+    }
+
+}
+
+@media (max-width:1199px) {
+    .about-us {
+        height: 520px;
+    }
+
+    /* ************ OUR STORY ********* */
+    .story-text {
+        max-width: 400px;
+    }
+
+}
+
+@media (max-width:991px) {
+    .nav_about {
+        height: 89px;
+    }
+
+    .about-us {
+        padding-top: 89px;
+        height: 450px;
+    }
+
+    /* ************ OUR STORY ********* */
+    .our_story {
+        padding-top: 50px;
+        min-height: 750px;
+    }
+
+    .story-text {
+        margin-top: 25px;
+    }
+
+    .cover-1 {
+        top: 50px;
+        bottom: 50px;
+        height: 300px;
+        width: 90%;
+    }
+
+    .cover-2 {
+        top: 400px;
+        bottom: 0px;
+        height: 300px;
+        width: 80%;
+    }
+
+    .our_story>.container-fluid {
+        height: 300px;
+    }
+
+    .story-text {
+        max-width: 600px;
+    }
+
+    /* ********* OUR FACILITY *********** */
+    .facility_cover {
+        margin-top: 100px;
+        padding-top: 100px;
+        height: auto;
+        width: 100%;
+    }
+
+    .facility-left {
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+    }
+
+    .facility-right {
+        height: auto;
+        width: 100%;
+    }
+
+    .our_facility>.container-fluid {
+        margin-top: 150px;
+        gap: 0px;
+        flex-direction: column-reverse;
+    }
+
+    .our_facility-text {
+        max-width: none;
+    }
+}
+
+@media (max-width:767px) {
+    .nav_about {
+        height: 79px;
+    }
+
+    .about-us {
+        padding-top: 79px;
+        height: 380px;
+    }
+
+    /* ************ OUR STORY ********* */
+    .cover-2 {
+        top: 400px;
+    }
+
+    .story-text {
+        max-width: 450px;
+    }
+
+}
+
+@media (max-width:575px) {
+    .nav_about {
+        height: 69px;
+    }
+
+    .about-us {
+        padding-top: 69px;
+        height: 300px;
+    }
+
+    /* ************ OUR STORY ********* */
+    .cover-1 {
+        height: 300px;
+    }
+
+    .cover-2 {
+        top: 400px;
+        height: 180px;
+    }
+
+    .story-text {
+        margin-left: 15px;
+        margin-right: 40px;
+        max-width: 450px;
+    }
+
+    /* ************ OUR FACILITY ********* */
+    .our_facility {
+        top: -150px;
+    }
+
+    .our_facility>.container-fluid {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:500px) {
+
+    /* ************ OUR STORY ********* */
+    .cover-1 {
+        height: 350px;
+    }
+
+    .our_story>.container-fluid {
+        height: 350px;
+    }
+
+    .cover-2 {
+        top: 450px;
+        height: 180px;
+    }
+
+    .our_facility {
+        top: -100px;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    /* ************ OUR STORY ********* */
+    .cover-1 {
+        height: 450px;
+    }
+
+    .our_story>.container-fluid {
+        height: 450px;
+    }
+
+    .cover-2 {
+        top: 550px;
+    }
+
+    .story-text {
+        overflow-x: hidden;
+        height: 450px;
+    }
+
+    .our_facility {
+        top: 0px;
+    }
 }
