@@ -666,6 +666,41 @@ textarea {
 
     /* HOME PAGE */
 
+    .support {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-fine_food.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .believe {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-one_on_one-scaled.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .innovation {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/innovating-scaled.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .tour {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/tour-scaled.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .chief {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/chief-scaled.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+
     #fp-nav ul li a span,
     .fp-slidesNav ul li a span {
         height: 10px;
@@ -910,6 +945,30 @@ textarea {
         max-width: 85%;
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .believe {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/one_on_one-scaled_edited.jpg');
+        background-size: cover;
+        height: 100vh;
+        background-position: right;
+        /* Center the image within the element */
+    }
+
+    .tour {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-tour_small_edited.jpg');
+        background-size: cover;
+        height: 100vh;
+        background-position: right;
+        /* Center the image within the element */
+    }
+
+    .chief {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/chief-scaled_edited.jpg');
+        background-size: cover;
+        height: 100vh;
+        background-position: left;
+        /* Center the image within the element */
     }
 
     .support .right-side {
