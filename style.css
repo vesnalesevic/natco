@@ -105,6 +105,7 @@ h6 {
     font-size: 20px;
     line-height: 22px;
     font-weight: 600;
+    margin-bottom: 0.25rem !important;
 }
 
 p {
@@ -1293,11 +1294,28 @@ textarea {
     .member_photo {
         height: 227px !important;
     }
+
+    h6 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .member_information .p1 {
+        font-size: 14px;
+        text-align: left;
+        line-height: 15px;
+    }
 }
 
 @media (min-width:991px) and (max-width:1199px) {
     .member_information {
         padding-left: 15px;
+    }
+
+    .member_information .p1 {
+        font-size: 14px;
+        text-align: left;
+        line-height: 15px;
     }
 }
 
@@ -1320,6 +1338,7 @@ textarea {
     .member_photo {
         height: 200px !important;
     }
+
 }
 
 @media (max-width:991px) {
@@ -1425,6 +1444,16 @@ textarea {
     .member_photo {
         height: 284px !important;
     }
+
+    h6 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .more_information .p1 {
+        font-size: 14px;
+        line-height: 15px;
+    }
 }
 
 @media (max-width:767px) {
@@ -1464,6 +1493,16 @@ textarea {
 
     .member_photo {
         height: 227px !important;
+    }
+
+    h6 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .member_information .p1 {
+        font-size: 11px;
+        line-height: 12px;
     }
 
 }
