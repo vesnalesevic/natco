@@ -1217,13 +1217,14 @@ textarea {
     padding-left: 26px;
 }
 
-.close-button {
+.close-button-div {
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
 }
 
 .modal-right img {
+    border-top: none;
     background: var(--color-white);
     height: 23px;
     width: 23px;
