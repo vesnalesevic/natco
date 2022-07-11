@@ -49,6 +49,7 @@ html {
 body {
     scroll-behavior: smooth;
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
     background: var(--color-black);
 }
@@ -102,6 +103,7 @@ h5 {
 }
 
 h6 {
+    text-align: left;
     font-size: 20px;
     line-height: 22px;
     font-weight: 600;
@@ -918,7 +920,7 @@ textarea {
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .container-fluid {
         width: 100%;
         padding-left: 15px;
@@ -1178,6 +1180,76 @@ textarea {
     color: var(--color-grey-light-1);
 }
 
+/* ******* MODALS ********** */
+
+.modal-dialog {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    max-width: 848px;
+    max-height: 391px;
+}
+
+.modal-dialog-centered {
+    min-height: calc(100% - 0rem);
+}
+
+.modal-content {
+    border: none;
+    border-radius: 0px;
+}
+
+.modal-body {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-left {
+    height: 391px;
+    width: 284px;
+}
+
+.modal-right {
+    display: flex;
+    flex: content;
+    flex-direction: row;
+    padding-left: 26px;
+}
+
+.close-button {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.modal-right img {
+    background: var(--color-white);
+    height: 23px;
+    width: 23px;
+}
+
+.modal-biography {
+    margin-top: 47px;
+}
+
+.modal-biography .p1 {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 300;
+    color: var(--color-grey-light-1);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.modal-biography p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    max-width: 482px;
+    color: var(--color-black);
+}
+
 @media (min-width:991px) {
 
     .our_story p,
@@ -1298,6 +1370,11 @@ textarea {
     h6 {
         font-size: 16px;
         line-height: 18px;
+    }
+
+    .member-biography h6 {
+        font-size: 20px;
+        line-height: 22px;
     }
 
     .member_information .p1 {
@@ -1450,9 +1527,28 @@ textarea {
         line-height: 22px;
     }
 
-    .more_information .p1 {
+    .more_information .p1,
+    .modal-biography .p1 {
         font-size: 14px;
         line-height: 15px;
+    }
+
+
+    .modal-dialog {
+        max-width: 500px;
+        height: 100vh;
+    }
+
+    .modal-left {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 284px;
+        height: 284px;
+    }
+
+    .modal-body {
+        flex-direction: column;
     }
 }
 
@@ -1500,14 +1596,27 @@ textarea {
         line-height: 18px;
     }
 
-    .member_information .p1 {
+    .member_information .p1,
+    .modal-biography .p1 {
         font-size: 11px;
         line-height: 12px;
     }
 
+    .modal-biography p {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 300;
+        color: var(--color-black);
+    }
+
+    .modal-left {
+        width: 227px;
+        height: 227px;
+    }
+
 }
 
-@media (max-width:575px) {
+@media (max-width:576px) {
     .nav_home {
         height: 69px;
     }
@@ -1557,6 +1666,12 @@ textarea {
     .team_members {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .modal-dialog {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width:500px) {
@@ -1581,6 +1696,12 @@ textarea {
 
     .our_team {
         margin-top: 0px;
+    }
+
+    .modal-dialog {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -1611,5 +1732,11 @@ textarea {
 
     .our_team {
         margin-top: 100px;
+    }
+
+    .modal-dialog {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
