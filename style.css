@@ -32,7 +32,7 @@
     /* min 1400px */
     --container-width-md: 1140px;
     /* min 1200px */
-    --container-width-sm: 960px;
+    --container-width-sm: 950px;
     /* min 992px */
     --container-width-xs: 720px;
     /* min 768px */
@@ -1088,7 +1088,6 @@ nav .container-fluid {
 
 .our_story {
     position: relative;
-    min-height: 1000px;
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: 0px;
@@ -1282,6 +1281,7 @@ nav .container-fluid {
 
 /* *********** OUR FACILITY ************ */
 .our_facility {
+    margin-top: 0px;
     position: relative;
     min-height: 751px;
 }
@@ -1297,7 +1297,7 @@ nav .container-fluid {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0px;
+    top: 200px;
     bottom: 0px;
     height: 751px;
     width: 65%;
@@ -1305,6 +1305,7 @@ nav .container-fluid {
 
 .our_facility>.container-fluid {
     gap: 70px;
+    margin-top: 200px;
     display: flex;
     flex-direction: row;
     height: 751px;
@@ -1363,7 +1364,7 @@ nav .container-fluid {
 
     /* ************ OUR STORY ********* */
     .facility_cover {
-        top: 0px;
+        top: 200px;
         height: 651px;
     }
 
@@ -1499,14 +1500,19 @@ nav .container-fluid {
         width: 100%;
     }
 
+    .our_facility {
+        margin-top: -250px;
+    }
+
     .our_facility>.container-fluid {
-        margin-top: 200px;
+        height: auto;
+        margin-top: 330px;
         gap: 0px;
         flex-direction: column-reverse;
     }
 
     .our_facility-text {
-        max-width: none;
+        max-width: none !important;
     }
 
     /* ********** OUR TEAM ************ */
@@ -1588,11 +1594,6 @@ nav .container-fluid {
 
     .story-text {
         max-width: 450px;
-    }
-
-    /* ************* OUR FACILITY *********** */
-    .our_facility>.container-fluid {
-        margin-top: 150px;
     }
 
     /* ************ OUR TEAM ******** */
@@ -1747,4 +1748,270 @@ nav .container-fluid {
         margin-top: 100px;
     }
 
+}
+
+/* ************* PAGE SERVICES ************* */
+.services {
+    background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('/nacto-images/services-page.png');
+    width: 100vw;
+    height: 597px;
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.restaurants {
+    display: flex;
+    min-height: 561px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.retail {
+    display: flex;
+    min-height: 561px;
+    margin-top: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.restaurants-cover {
+    z-index: -1;
+    background: url('/nacto-images/services-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    bottom: 0px;
+    height: 561px;
+    width: 47.5%;
+    position: absolute;
+}
+
+.retail-cover {
+    z-index: -1;
+    background: url('/nacto-images/retail.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    bottom: 0px;
+    height: 561px;
+    width: 47.5%;
+    position: absolute;
+}
+
+.restaurants>.container-fluid,
+.retail>.container-fluid {
+    place-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.services-left {
+    width: 47.5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.services-right {
+    display: flex;
+    width: 47.5%;
+}
+
+.our_facility-text {
+    height: fit-content;
+    max-width: 524px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.institutions {
+    margin-top: 200px;
+    height: auto;
+    place-items: center;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.institutions>.container-fluid {
+    gap: 10%;
+}
+
+.institutions-left {
+    width: fit-content;
+}
+
+.institutions-right {
+    max-height: 561px;
+    background: url('/nacto-images/institutions.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 57%;
+}
+
+.institutions-right .sub-image {
+    background: url('/nacto-images/services-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 56%;
+    height: 56%;
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+}
+
+. @media (max-width:1399px) {
+    .services {
+        height: 520px;
+    }
+}
+
+@media (max-width:991px) {
+    .services {
+        padding-top: 89px;
+        height: 450px;
+    }
+
+    .restaurants {
+        margin-top: 80px;
+    }
+
+    .retail {
+        margin-top: 80px;
+    }
+
+    .restaurants-cover {
+        background: url('/nacto-images/services-1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        top: 0px;
+        height: 300px;
+        width: 90%;
+    }
+
+    .retail-cover {
+        background: url('/nacto-images/retail.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        top: 0px;
+        height: 300px;
+        width: 90%;
+    }
+
+    .restaurants>.container-fluid,
+    .retail>.container-fluid {
+        gap: 50px;
+        flex-direction: column;
+        top: 0px;
+    }
+
+    .services-left {
+        width: 100%;
+        height: 300px;
+    }
+
+    .services-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .institutions {
+        margin-top: 80px;
+    }
+
+    .institutions>.container-fluid {
+        gap: 80px;
+        flex-direction: column-reverse;
+    }
+
+    .institutions-right {
+        background: url('/nacto-images/institutions.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-right: 0px;
+        margin-left: auto;
+        width: 80%;
+        height: 300px;
+    }
+
+
+    .institutions-right .sub-image {
+        background: url('/nacto-images/services-1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width:767px) {
+    .services {
+        padding-top: 79px;
+        height: 380px;
+    }
+}
+
+@media (max-width:576px) {
+    .services {
+        padding-top: 69px;
+        height: 300px;
+    }
+
+    .restaurants-cover {
+        background: url('/nacto-images/services-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 180px;
+    }
+
+    .retail-cover {
+        background: url('/nacto-images/retail.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        height: 180px;
+    }
+
+    .services-left {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 180px;
+    }
+
+    .restaurants>.container-fluid,
+    .retail>.container-fluid {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .institutions-right {
+        background: url('/nacto-images/institutions.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 0px;
+        margin-left: auto;
+        height: 180px;
+    }
+
+    .institutions>.container-fluid .institutions-left {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
