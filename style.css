@@ -2015,3 +2015,218 @@ nav .container-fluid {
         margin-right: 15px;
     }
 }
+
+/* ******** TOURS ************** */
+.tours {
+    background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.7)), url('/nacto-images/tours-cover.jpg');
+    width: 100vw;
+    height: auto;
+    padding-top: 195px;
+    padding-bottom: 95px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.tours .container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.splider-cover {
+    max-height: 590px;
+}
+
+.splide-tours-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: fit-content;
+    width: 40%;
+}
+
+.story-text {
+    max-width: 524px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.splide-tours {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 56%;
+    padding-bottom: 20px;
+}
+
+.splide__slide {
+    max-width: fit-content;
+    padding-bottom: auto;
+    padding-top: auto;
+}
+
+
+.splide-tours .splide__slide {
+    padding: auto;
+}
+
+.splide {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.splide-tours {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.splide__slide img {
+    box-sizing: border-box;
+    height: 561px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+/*
+
+.image-tours {
+    background-size: contain;
+    height: 561px;
+    max-width: 630px;
+}
+*/
+
+.splide__pagination__page.is-active {
+    width: 40px;
+    height: 6px;
+    background: var(--color-white);
+    transform: scale(1);
+}
+
+.splide__pagination {
+    margin-top: 15px;
+    bottom: auto;
+}
+
+.splide__pagination__page {
+    border-radius: 0px;
+    background: #7E7E7E;
+    height: 6px;
+    width: 40px;
+}
+
+.mobile-splide {
+    visibility: hidden;
+    height: 0px;
+}
+
+@media (max-width:1599px) {
+    .splide__slide img {
+        box-sizing: border-box;
+        height: 460px;
+    }
+}
+
+@media (max-width:1399px) {
+    .splide__slide img {
+        box-sizing: border-box;
+        height: 325px;
+    }
+}
+
+@media (max-width:1199px) {
+    .tours {
+        background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.7)), url('/nacto-images/tours-cover.jpg');
+        background-repeat: no-repeat;
+        width: 100vw;
+        max-height: fit-content;
+        background-size: cover;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        background-position: center top;
+    }
+
+    .tours .container-fluid {
+        gap: 100px;
+        flex-direction: column-reverse !important;
+    }
+
+    .splide-tours {
+        max-width: 100%;
+    }
+
+    .splide-tours-text {
+        display: none;
+        height: 0px !important;
+    }
+
+    .splide-tours-text {
+        width: 100%;
+    }
+
+    .splider-cover {
+        max-height: auto;
+    }
+
+    .splide__slide img {
+        box-sizing: border-box;
+        height: auto;
+        width: 630px;
+    }
+
+    .mobile-splide {
+        visibility: visible;
+        height: max-content;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width:991px) {
+    .splide__slide img {
+        height: 401px;
+        width: 450px;
+    }
+}
+
+@media (max-width:767px) {
+    .splide__slide img {
+        box-sizing: border-box;
+        height: 347px;
+        width: 390px;
+    }
+}
+
+@media(max-width:576px) {
+    .tours .container-fluid {
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .splide__slide img {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+    }
+
+    .splide__pagination__page.is-active {
+        width: 15px;
+        height: 2px;
+        background: var(--color-white);
+        transform: scale(1);
+    }
+
+    .splide__pagination {
+        margin-top: 15px;
+        bottom: 5px;
+    }
+
+    .splide__pagination__page {
+        height: 2px;
+        width: 15px;
+    }
+
+
+}
