@@ -928,9 +928,7 @@ textarea {
     }
 
     .container-fluid {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -2045,12 +2043,6 @@ nav .container-fluid {
     width: 40%;
 }
 
-.story-text {
-    max-width: 524px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .splide-tours {
     margin-left: auto;
     margin-right: auto;
@@ -2148,6 +2140,7 @@ nav .container-fluid {
 }
 
 @media (max-width:1199px) {
+
     .tours {
         background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.7)), url('/nacto-images/tours-cover.jpg');
         background-repeat: no-repeat;
