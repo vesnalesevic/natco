@@ -2055,7 +2055,7 @@ nav .container-fluid {
     margin-left: auto;
     margin-right: auto;
     max-width: 56%;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .splide__slide {
@@ -2087,14 +2087,10 @@ nav .container-fluid {
     width: 100%;
 }
 
-/*
-
-.image-tours {
-    background-size: contain;
-    height: 561px;
-    max-width: 630px;
+.splide__arrows {
+    margin-top: auto;
+    margin-bottom: auto;
 }
-*/
 
 .splide__pagination__page.is-active {
     width: 40px;
@@ -2115,9 +2111,26 @@ nav .container-fluid {
     width: 40px;
 }
 
-.mobile-splide {
-    visibility: hidden;
-    height: 0px;
+.splide-mobile {
+    display: none;
+}
+
+.splide-tours .splide__slide {
+    background: black;
+}
+
+.splide__slide img {
+    opacity: 0.4;
+}
+
+.is-visible img {
+    transition: opacity .25s ease-in-out;
+    opacity: 1 !important;
+}
+
+.splide__slide img:hover {
+    transition: opacity .25s ease-in-out;
+    opacity: 1;
 }
 
 @media (max-width:1599px) {
@@ -2141,14 +2154,18 @@ nav .container-fluid {
         width: 100vw;
         max-height: fit-content;
         background-size: cover;
-        padding-top: 150px;
-        padding-bottom: 50px;
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: 40px;
         background-position: center top;
     }
 
     .tours .container-fluid {
-        gap: 100px;
         flex-direction: column-reverse !important;
+    }
+
+    .splide__pagination {
+        margin-top: 7px;
     }
 
     .splide-tours {
@@ -2158,9 +2175,6 @@ nav .container-fluid {
     .splide-tours-text {
         display: none;
         height: 0px !important;
-    }
-
-    .splide-tours-text {
         width: 100%;
     }
 
@@ -2174,8 +2188,8 @@ nav .container-fluid {
         width: 630px;
     }
 
-    .mobile-splide {
-        visibility: visible;
+    .splide-mobile {
+        display: block;
         height: max-content;
         padding-top: 20px;
         padding-bottom: 50px;
@@ -2187,9 +2201,14 @@ nav .container-fluid {
         height: 401px;
         width: 450px;
     }
+
 }
 
 @media (max-width:767px) {
+    .tours {
+        padding-top: 100px;
+    }
+
     .splide__slide img {
         box-sizing: border-box;
         height: 347px;
@@ -2198,6 +2217,12 @@ nav .container-fluid {
 }
 
 @media(max-width:576px) {
+
+    .tours {
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+
     .tours .container-fluid {
         margin-left: auto;
         margin-right: auto;
@@ -2205,10 +2230,21 @@ nav .container-fluid {
         padding-left: 15px;
     }
 
+    .splide-tours .splide__slide {
+        margin-top: 0%;
+    }
+
+
     .splide__slide img {
         box-sizing: border-box;
-        height: auto;
+        max-width: 450px;
         width: 100%;
+        height: auto;
+        aspect-ratio: 276/246;
+    }
+
+    .splide__pagination {
+        margin-top: -4px;
     }
 
     .splide__pagination__page.is-active {
@@ -2218,15 +2254,8 @@ nav .container-fluid {
         transform: scale(1);
     }
 
-    .splide__pagination {
-        margin-top: 15px;
-        bottom: 5px;
-    }
-
     .splide__pagination__page {
         height: 2px;
         width: 15px;
     }
-
-
 }

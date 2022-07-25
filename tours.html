@@ -95,7 +95,7 @@
     <section class="tours">
         <div class="splider-cover">
             <div class="d-flex container-fluid row">
-                <div class="splide splide-tours-text" id="splider-text">
+                <div class="splide splide-tours-text">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
@@ -207,23 +207,23 @@
                     </div>
                 </div>
 
-                <div class="splide splide-tours" id="splider-images">
+                <div class="splide splide-tours">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide" style="background-color: black;">
-                                <img src="/nacto-images/institutions.jpg" alt="">
+                                <img class="image-cover" src="/nacto-images/tour-1.jpg" alt="">
                             </li>
                             <li class="splide__slide">
-                                <img src="/nacto-images/institutions.jpg" alt="">
+                                <img class="image-cover" src="/nacto-images/tour-2.jpg" alt="">
                             </li>
                             <li class="splide__slide">
-                                <img src="/nacto-images/institutions.jpg" alt="">
+                                <img class="image-cover" src="/nacto-images/tour-3.jpg" alt="">
                             </li>
                             <li class="splide__slide">
-                                <img src="/nacto-images/institutions.jpg" alt="">
+                                <img class="image-cover" src="/nacto-images/tour-4.jpg" alt="">
                             </li>
                             <li class="splide__slide">
-                                <img src="/nacto-images/institutions.jpg" alt="">
+                                <img class="image-cover" src="/nacto-images/tour-5.jpg" alt="">
                             </li>
                         </ul>
                     </div>
@@ -232,9 +232,9 @@
         </div>
     </section>
 
-    <section class="mobile-splide">
-        <div class="d-flex container-fluid row">
-            <div class="splide" id="splider-text-1">
+    <section>
+        <div class="d-flex container-fluid row" style="margin-left: auto; margin-right:auto;">
+            <div class="splide splide-mobile">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
@@ -261,6 +261,69 @@
                         <li class="splide__slide">
                             <div class="tours-text">
                                 <h5>Tour Station 2</h5>
+                                <div class="horizontal-line"></div>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                    et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                    takimata
+                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                    ea
+                                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                    sit
+                                    amet.</p>
+                                <a href="#"><button class="btn">SCHEDULE A TOUR</button></a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="tours-text" style="margin-top: auto; margin-bottom:auto;">
+                                <h5>Tour Station 3</h5>
+                                <div class="horizontal-line"></div>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                    et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                    takimata
+                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                    ea
+                                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                    sit
+                                    amet.</p>
+                                <a href="#"><button class="btn">SCHEDULE A TOUR</button></a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="tours-text" style="margin-top: auto; margin-bottom:auto;">
+                                <h5>Tour Station 4</h5>
+                                <div class="horizontal-line"></div>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                    et
+                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                    takimata
+                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                    magna
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                                    ea
+                                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                                    sit
+                                    amet.</p>
+                                <a href="#"><button class="btn">SCHEDULE A TOUR</button></a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="tours-text" style="margin-top: auto; margin-bottom:auto;">
+                                <h5>Tour Station 5</h5>
                                 <div class="horizontal-line"></div>
                                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                     tempor
@@ -387,12 +450,11 @@
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        var splide_tours = new Splide('#splider-images', {
+        var splide_tours = new Splide('.splide-tours', {
             type: 'slide',
             perPage: 1,
             perMove: 1,
             focus: 'center',
-            drag: false,
             gap: 15,
             padding: {
                 right: '120px',
@@ -401,36 +463,44 @@
             breakpoints: {
                 1199: {
                     padding: {
-                        gap: 20,
+                        gap: 0,
                     },
                 },
                 767: {
                     padding: {
-                        right: '60px',
-                        left: '60px',
+                        right: '47px',
+                        left: '47px',
                     },
+                    gap: 5,
                 },
             }
         }).mount();
 
-        var splide_tours_text = new Splide('#splider-text', {
+        var splide_tours_text = new Splide('.splide-tours-text', {
+            type: 'fade',
             pagination: false,
             arrows: false,
+            cover: false,
+            drag: true,
             speed: 0,
             gap: 0,
 
         }).mount();
 
-        var splide_tours_text_1 = new Splide('#splider-text-1', {
+        var splide_tours_mobile = new Splide('.splide-mobile', {
+            type: 'fade',
             pagination: false,
             arrows: false,
+            cover: false,
+            drag: true,
             speed: 0,
             gap: 0,
 
         }).mount();
 
-        splide_tours.sync(splide_tours_text).mount();
-        splide_tours.sync(splide_tours_text_1).mount();
+        (splide_tours.sync(splide_tours_text),
+            splide_tours.sync(splide_tours_mobile)
+        ).mount();
     });
 </script>
 
