@@ -19,7 +19,6 @@
     --color-dark-red: #b50d14;
     /*added*/
     --color-red-line: #EB2127;
-    /*added*/
     --color-grey-light: #BBBBBC;
     --color-grey-light-1: #6E7376;
     --color-contact-form: #6A757E;
@@ -420,10 +419,11 @@ h2 span {
     z-index: 0;
     background-color: var(--color-white);
     width: 590px;
-    height: 498px;
+    height: auto;
     padding-top: 31.5px;
     padding-left: 30.5px;
     padding-right: 30.5px;
+    padding-bottom: 50px;
     margin-left: 35px;
     margin-right: 35px;
 }
@@ -928,6 +928,14 @@ textarea {
     }
 
     .container-fluid {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-contact-form .container-fluid {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -1873,12 +1881,14 @@ nav .container-fluid {
 }
 
 . @media (max-width:1399px) {
+
     .services {
         height: 520px;
     }
 }
 
 @media (max-width:991px) {
+
     .services {
         padding-top: 89px;
         height: 450px;
@@ -1959,6 +1969,7 @@ nav .container-fluid {
 }
 
 @media (max-width:767px) {
+
     .services {
         padding-top: 79px;
         height: 380px;
@@ -1966,6 +1977,7 @@ nav .container-fluid {
 }
 
 @media (max-width:576px) {
+
     .services {
         padding-top: 69px;
         height: 300px;
@@ -2250,5 +2262,133 @@ nav .container-fluid {
     .splide__pagination__page {
         height: 2px;
         width: 15px;
+    }
+}
+
+/* ************ CAREERS ********* */
+.careers {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1)), url('/nacto-images/about-us-scaled.jpg');
+    width: 100vw;
+    height: 750px;
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#careers-form .contact-form,
+#careers-form .form-left,
+#careers-form .form-right {
+    margin-top: -310px;
+}
+
+#careers-form .form {
+    border-bottom: none;
+}
+
+#careers-form img {
+    box-shadow: 0px 12px 24px #000000;
+    border: 1px solid #FFFFFF;
+}
+
+.careers-box {
+    max-width: 390px;
+    padding-top: 120px;
+}
+
+@media (max-width:1599px) {
+    .careers-box {
+        max-width: 350px;
+    }
+}
+
+@media (max-width:1399px) {
+    .careers {
+        height: 520px;
+    }
+
+    .careers-box {
+        max-width: 280px;
+    }
+
+    #careers-form .contact-form {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    #careers-form .form {
+        flex-direction: row;
+        justify-content: space-between !important;
+    }
+
+    #careers-form .contact-form,
+    #careers-form .form-left {
+        margin-top: -200px;
+    }
+
+    #careers-form .contact-form {
+        width: 50%;
+    }
+
+    #careers-form .form-right {
+        visibility: hidden;
+        width: 0px !important;
+        display: none;
+    }
+
+    .careers-box {
+        max-width: 350px;
+    }
+}
+
+@media (max-width:991px) {
+    .careers {
+        padding-top: 89px;
+        height: 450px;
+    }
+
+    #careers-form .contact-form {
+        margin-top: 30px;
+    }
+
+    #careers-form .contact-form {
+        margin-top: 100px;
+    }
+
+    #careers-form .form-right {
+        margin-top: 30px;
+    }
+
+    .careers-box {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .careers {
+        padding-top: 79px;
+        height: 380px;
+    }
+
+    #careers-form .contact-form {
+        margin-top: 220px;
+    }
+
+    .careers h1 {
+        margin-top: 0px !important;
+    }
+}
+
+@media (max-width:576px) {
+    .careers {
+        padding-top: 69px;
+        height: 300px;
+    }
+
+    #careers-form .contact-form {
+        margin-top: 250px;
     }
 }
