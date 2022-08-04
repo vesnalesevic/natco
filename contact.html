@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATCO</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- GOOGLE FONTS (KANIT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap"
+        rel="stylesheet">
+
+    <!--FullPage Js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"
+        integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css"
+        integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A=="
+        crossorigin="anonymous" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js"></script>
+    <!--End FullPage Js-->
+
+    <!-- RECAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <link rel="stylesheet" href="/style.css" type="text/css">
+
+</head>
+
+
+<nav id="menu">
+    <div class="nav_about">
+        <div class="d-flex container-fluid row justify-content-between" style="margin:auto; height: 100%;">
+            <a href="index.html"
+                style="width: fit-content; height: fit-content; margin-top: auto; margin-bottom: auto; margin-left: 0; margin-right: auto;">
+                <img class="logo" src="/nacto-images/Natco-Logo-White.svg">
+            </a>
+            <ul class="nav_menu nav-closed" style="width: fit-content;">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="tours.html">TOURS</a></li>
+                <li><a href="#careers.html" class="active_nav-item">CAREERS</a></li>
+                <li><a href="#">PORTAL LOGIN</a></li>
+                <li><a href="contact.html"><button class="btn">CONTACT</button></a></li>
+            </ul>
+            <button class="navbar-toggler" style="width: fit-content;" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                <span><i class="uil uil-bars" style="font-size: 30px; text-align: right;"></i></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-body" style="padding: 0px; margin: 0px;">
+                <div class="d-flex" style="margin-top: 0px;">
+                    <button type="button" class="btn-close ms-auto" style="margin-right:0px; margin-top:15px;"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="nav_menu-canvas">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="tours.html">TOURS</a></li>
+                    <li><a href="#careers.html" class="active_nav-item">CAREERS</a></li>
+                    <li><a href="#">PORTAL LOGIN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <section class="d-flex contact-page">
+        <div class="d-flex container-fluid justify-content-around" style="margin-top:auto;margin-bottom:auto;">
+            <div class="tours-text" style="margin-top: auto; margin-bottom:auto;">
+                <h5>Get in touch</h5>
+                <div class="horizontal-line"></div>
+                <p>LLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="contact-form text-center" style="margin-left: auto; margin-right:auto;">
+                <h3>Contact Us</h3>
+                <div>
+                    <input type="text" name="Your Name" placeholder="Name*" required>
+                    <input type="email" name="Email Address" placeholder="Email*" required>
+                    <textarea name="Message" rows="10" placeholder="Message*" required></textarea>
+                    <div class="d-flex captcha justify-content-around">
+                        <div class="g-recaptcha" data-sitekey="6LeBRIUgAAAAAKKRFv3Dj2MRAqaiGN1W4yWXVX6Q"></div>
+                        <button type="submit" class="btn">SEND MESSAGE</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+    
+    -->
+
+
+    <!-- *************** FOOTER *********** -->
+    <section class="vertical-scrolling fp-scrollable fp-auto-height">
+        <div class="footer">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3991516.5397888054!2d-93.54075128088793!3d28.75366075239806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620d67f9bcd5d99%3A0xd77aeb9c931d3c0!2s321%20W%2010th%20St%2C%20Reserve%2C%20LA%2070084%2C%20USA!5e0!3m2!1sen!2srs!4v1655455029817!5m2!1sen!2srs"
+                width="100%" height="420px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div>
+                <div class="d-flex footer-contact-form" style="justify-content:center;">
+                    <div class="d-flex container-fluid form" style="justify-content:center;">
+                        <div class="form-left" style="width: fit-content;">
+                            <img style="display:block;" src="/nacto-images/Natco-Logo-White.svg" alt="">
+                            <div style="margin-top: 20px;">
+                                <img src="/nacto-images/f_1_.svg" alt="">
+                                <img style="margin-left: 15px;" src="/nacto-images/Component 18.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="contact-form text-center">
+                            <h3>Contact Us</h3>
+                            <div>
+                                <input type="text" name="Your Name" placeholder="Name*" required>
+                                <input type="email" name="Email Address" placeholder="Email*" required>
+                                <textarea name="Message" rows="10" placeholder="Message*" required></textarea>
+                                <div class="d-flex captcha justify-content-around">
+                                    <div class="g-recaptcha" data-sitekey="6LeBRIUgAAAAAKKRFv3Dj2MRAqaiGN1W4yWXVX6Q">
+                                    </div>
+                                    <button type="submit" class="btn">SEND MESSAGE</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-right d-flex" style="flex-direction: column;">
+                            <div class="d-flex" style="flex-direction: row;">
+                                <div>
+                                    <img style="margin-right:20px;" src="/nacto-images/map-marker-alt.svg" alt="">
+                                </div>
+                                <div class="p1">
+                                    Natco Food Service
+                                    <br>
+                                    321 West 10th Street Reserve,
+                                    <br>
+                                    LA 70084
+                                    <br>
+                                    USA
+                                </div>
+                            </div>
+
+                            <div class="d-flex" style="flex-direction: row;">
+                                <div>
+                                    <img style="margin-right:20px;" src="/nacto-images/phone-alt.svg" alt="">
+                                </div>
+                                <div class="p1">
+                                    Phone: (985) 479-4200
+                                    <br>
+                                    Fax: (985) 479-4200
+                                </div>
+                            </div>
+
+                            <div class="d-flex" style="flex-direction: row;">
+                                <div>
+                                    <img style="margin-right:20px;" src="/nacto-images/envelope.svg" alt="">
+                                </div>
+                                <div class="p1">
+                                    info@natcofs.com
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex form-right-2 justify-content-between" style="display: inline;">
+                            <div>
+                                <img style="display:block;" src="/nacto-images/Natco-Logo-White - small.svg" alt="">
+                            </div>
+
+                            <div style="margin-top: auto; margin-bottom:auto;">
+                                <img src="/nacto-images/f_1_.svg" alt="">
+                                <img style="margin-left: 15px;" src="/nacto-images/Component 18.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex container-fluid footer-menu">
+                        <div class="d-flex">
+                            <p style="height:fit-content; margin-top: auto; margin-bottom: auto;">© 2021 Natco Food
+                                Service. All Rights
+                                Reserved.</p>
+                        </div>
+                        <ul class="d-flex footer-nav" style="display: row; margin-top: auto; margin-bottom: auto;">
+                            <li><a href="index.html" class="active_nav-item">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </section>
+    <!-- *************** END OF FOOTER *********** -->
+    </div>
+    </div>
+</body>
+
+<script src="./js/bootstrap.min.js"></script>
+<script src="/js-singularity/main.js"></script>
+
+</html>
