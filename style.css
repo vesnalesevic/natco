@@ -17,6 +17,7 @@
     --color-red: #ED1B24;
     /* changed */
     --color-dark-red: #b50d14;
+    --color-blue: #00308F;
     /*added*/
     --color-red-line: #EB2127;
     --color-grey-light: #BBBBBC;
@@ -50,7 +51,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
-    background: var(--color-black);
+    background: var(--color-blue);
 }
 
 .container-fluid {
@@ -137,7 +138,7 @@ nav a .btn {
 
 
 .btn {
-    background: var(--color-red);
+    background: var(--color-blue);
     border-radius: 0px;
     border: none;
     height: 40px;
@@ -146,6 +147,7 @@ nav a .btn {
     line-height: 14px;
     font-weight: 600;
     color: var(--color-white);
+    border-radius: 50px;
 }
 
 .btn:hover {
@@ -272,7 +274,7 @@ div#fp-nav a span {
 }
 
 .intro {
-    background: linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('/nacto-images/natco-home-scaled');
+    background: linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(0, 48, 143, 0.7)), url('/nacto-images/image9.jpeg');
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -292,7 +294,7 @@ div#fp-nav a span {
 }
 
 .support {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-fine_food.jpg');
+    background-image: url('/nacto-images/image7.jpeg');
     height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -302,7 +304,7 @@ div#fp-nav a span {
 }
 
 .believe {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-one_on_one-scaled.jpg');
+    background: url('/nacto-images/image8.jpeg');
     height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -312,27 +314,7 @@ div#fp-nav a span {
 }
 
 .innovation {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/innovating-scaled.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-
-.tour {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/tour-scaled.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-
-.chief {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/chief-scaled.jpg');
+    background: url('/nacto-images/image1.jpeg');
     height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -343,22 +325,22 @@ div#fp-nav a span {
 
 .support p,
 .believe p,
-.innovation p,
-.tour p,
-.chief p {
+.innovation p{
     max-width: 636.6px;
 }
 
 
 h2 span {
-    color: var(--color-red);
+    color: var(--color-blue);
+}
+
+.vertical-line {
+    border-left: 10px solid var(--color-blue); padding-left: 20px;
 }
 
 .horizontal-line {
-    margin-top: 21px;
-    width: 60px;
-    height: 4px;
-    background-color: var(--color-red-line);
+    border-left: 2px solid red; padding-left: 20px;
+    background-color: var(--color-blue);
 }
 
 /* ******* FOOTER ******** */
@@ -367,7 +349,7 @@ h2 span {
 }
 
 .footer {
-    border-top: 5px solid var(--color-red);
+    border-top: 5px solid var(--color-blue);
     padding: 0;
 }
 
@@ -384,15 +366,13 @@ h2 span {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    background-color: #000;
+    background-color: var(--color-blue);
 }
 
 .form {
     display: flex;
     float: left;
     height: fit-content;
-    padding-bottom: 40px;
-    border-bottom: 2px solid var(--color-black-light);
 }
 
 .form-left {
@@ -418,14 +398,14 @@ h2 span {
     margin-top: -160px;
     z-index: 0;
     background-color: var(--color-white);
-    width: 590px;
+    width: 70%;
     height: auto;
     padding-top: 31.5px;
     padding-left: 30.5px;
     padding-right: 30.5px;
     padding-bottom: 50px;
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-form h3 {
@@ -593,7 +573,7 @@ textarea {
     /* *********** NAVBAR *********** */
 
     .logo {
-        width: auto;
+        width: 35px;
         height: 35px;
     }
 
@@ -664,7 +644,7 @@ textarea {
         align-self: center;
         padding-top: 30px;
         padding-left: 10px;
-        color: var(--color-black);
+        color: var(--color-blue);
         font-size: 18px;
         line-height: 14px;
         text-decoration: none;
@@ -678,35 +658,21 @@ textarea {
     /* HOME PAGE */
 
     .support {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-fine_food.jpg');
+        background-image: url('/nacto-images/image7.jpeg');
         height: 100vh;
         background-size: cover;
         background-position: center center;
     }
 
     .believe {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-one_on_one-scaled.jpg');
+        background: url('/nacto-images/image8.jpeg');
         height: 100vh;
         background-size: cover;
         background-position: center center;
     }
 
     .innovation {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/innovating-scaled.jpg');
-        height: 100vh;
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .tour {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/tour-scaled.jpg');
-        height: 100vh;
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .chief {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/chief-scaled.jpg');
+        background: url('/nacto-images/image1.jpeg');
         height: 100vh;
         background-size: cover;
         background-position: center center;
@@ -970,7 +936,7 @@ textarea {
     }
 
     .believe {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/one_on_one-scaled_edited.jpg');
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rrgba(0, 48, 143, 1) 100%), url('/nacto-images/image8.jpeg');
         background-size: cover;
         height: 100vh;
         background-position: right;
@@ -978,7 +944,7 @@ textarea {
     }
 
     .tour {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/natco-home-tour_small_edited.jpg');
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 48, 143, 1) 100%), url('/nacto-images/natco-home-tour_small_edited.jpg');
         background-size: cover;
         height: 100vh;
         background-position: right;
@@ -986,7 +952,7 @@ textarea {
     }
 
     .chief {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%), url('/nacto-images/chief-scaled_edited.jpg');
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 48, 143, 1) 100%), url('/nacto-images/chief-scaled_edited.jpg');
         background-size: cover;
         height: 100vh;
         background-position: left;
@@ -1068,7 +1034,7 @@ textarea {
     padding: 0;
     z-index: 100;
     width: 100%;
-    background: var(--color-black);
+    background: var(--color-blue);
     opacity: 0.6;
     margin: 0;
     height: 100px;
@@ -1080,7 +1046,7 @@ nav .container-fluid {
 }
 
 .about-us {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/nacto-images/about-us-scaled.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 50%, rgba(0, 48, 143, 1) 100%), url('/nacto-images/image0.jpeg');
     width: 100vw;
     height: 597px;
     padding-top: 100px;
@@ -1111,7 +1077,7 @@ nav .container-fluid {
 
 .cover-1 {
     z-index: -1;
-    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/nacto-images/about-2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 48, 143, 1) 100%), url('/nacto-images/image11.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -1123,7 +1089,7 @@ nav .container-fluid {
 
 .cover-2 {
     z-index: -1;
-    background: url('/nacto-images/about-2.jpg');
+    background:  linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 48, 143, 1) 100%), url('/nacto-images/image11.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -1267,7 +1233,7 @@ nav .container-fluid {
     line-height: 22px;
     font-weight: 300;
     max-width: 482px;
-    color: var(--color-black);
+    color: var(--color-blue);
 }
 
 @media (min-width:991px) {
@@ -1299,7 +1265,7 @@ nav .container-fluid {
 
 .facility_cover {
     z-index: -1;
-    background: linear-gradient(rgba(0, 0, 0, 0.75) 100%, rgba(0, 0, 0, 0.75) 100%), url('/nacto-images/stock-photo-meat-industry-meats-hanging-in-the-cold-store-1285101004_edited.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.75) 100%, rgba(0, 48, 143, 1) 100%), url('/nacto-images/stock-photo-meat-industry-meats-hanging-in-the-cold-store-1285101004_edited.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -1628,7 +1594,7 @@ nav .container-fluid {
         font-size: 12px;
         line-height: 16px;
         font-weight: 300;
-        color: var(--color-black);
+        color: var(--color-blue);
     }
 
     .modal-left {
@@ -1758,7 +1724,7 @@ nav .container-fluid {
 
 /* ************* PAGE SERVICES ************* */
 .services {
-    background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('/nacto-images/services-page.png');
+    background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.5), rgba(0, 48, 143, 1)), url('/nacto-images/services-page.png');
     width: 100vw;
     height: 597px;
     padding-top: 100px;
@@ -2028,7 +1994,7 @@ nav .container-fluid {
 
 /* ******** TOURS ************** */
 .tours {
-    background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.7)), url('/nacto-images/tours-cover.jpg');
+    background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.7), rgba(0, 48, 143, 0.7)), url('/nacto-images/image8.jpeg');
     width: 100vw;
     height: auto;
     padding-top: 195px;
@@ -2120,7 +2086,7 @@ nav .container-fluid {
 }
 
 .splide-tours .splide__slide {
-    background: black;
+    background: var(--color-blue);
 }
 
 .splide__slide img {
@@ -2252,7 +2218,7 @@ nav .container-fluid {
 
 /* ************ CAREERS ********* */
 .careers {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1)), url('/nacto-images/about-us-scaled.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 48, 143, 1)), url('/nacto-images/about-us-scaled.jpg');
     width: 100vw;
     height: 750px;
     padding-top: 100px;
@@ -2358,7 +2324,7 @@ nav .container-fluid {
     }
 
     .careers {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1)), url('/nacto-images/about-us-scaled.jpg');
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 48, 143, 1)), url('/nacto-images/about-us-scaled.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: top center;
@@ -2411,7 +2377,7 @@ nav .container-fluid {
 
 @media (max-width:767px) {
     .careers {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1)), url('/nacto-images/about-us-scaled.jpg');
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 70%, rrgba(0, 48, 143, 1)), url('/nacto-images/about-us-scaled.jpg');
         background-size: auto 380px;
         background-repeat: no-repeat;
         background-position: top center;
@@ -2435,7 +2401,7 @@ nav .container-fluid {
 
 @media (max-width:576px) {
     .careers {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 1)), url('/nacto-images/about-us-scaled.jpg');
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 70%, rrgba(0, 48, 143, 1)), url('/nacto-images/about-us-scaled.jpg');
         background-size: auto 300px;
         background-repeat: no-repeat;
         padding-top: 69px;
@@ -2449,7 +2415,7 @@ nav .container-fluid {
 
 /* ****** CONTACT PAGE ******* */
 .contact-page {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 1) 20%), url('/nacto-images/tours-cover.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 80%, rgba(0, 48, 143, 1) 20%), url('/nacto-images/tours-cover.jpg');
     width: 100vw;
     height: auto;
     padding-top: 195px;
@@ -2490,7 +2456,7 @@ nav .container-fluid {
 
 @media (max-width:991px) {
     .contact-page {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 1)), url('/nacto-images/tours-cover.jpg');
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 48, 143, 1)), url('/nacto-images/tours-cover.jpg');
         height: auto;
         margin-top: 0px;
         padding-top: 130px;
@@ -2514,7 +2480,7 @@ nav .container-fluid {
 
 @media (max-width:767px) {
     .contact-page {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 1)), url('/nacto-images/tours-cover.jpg');
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 48, 143, 1)), url('/nacto-images/tours-cover.jpg');
         background-size: auto 380px;
         background-repeat: no-repeat;
     }
@@ -2522,7 +2488,7 @@ nav .container-fluid {
 
 @media (max-width:576px) {
     .contact-page {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 1)), url('/nacto-images/tours-cover.jpg');
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 100%, rgba(0, 48, 143, 1)), url('/nacto-images/tours-cover.jpg');
         background-size: auto 300px;
         background-repeat: no-repeat;
         padding-top: 100px;
